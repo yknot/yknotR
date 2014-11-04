@@ -8,7 +8,7 @@ knot.barchart <- function(df, x, y, fill, title, xlab, ylab, filename) {
     # bar chart
     geom_bar(stat='identity') +
     # numbers on chart
-    geom_text(aes_string(label=y), position=position_dodge(width=0.9), size=10, hjust=1.5, vjust= .4) +
+    #geom_text(aes_string(label=y), position=position_dodge(width=0.9), size=10, hjust=1.5, vjust= .4) +
     # make it vertical
     coord_flip() +
     # black and white
@@ -28,7 +28,7 @@ knot.barchart <- function(df, x, y, fill, title, xlab, ylab, filename) {
     theme(legend.background=element_rect(fill="#F0F0F0")) +
     # Set title and axis labels, and format these and tick marks
     ggtitle(title) +
-    theme(plot.title=element_text(face="bold",hjust=-.08,vjust=2,colour="#3C3C3C",size=30)) +
+    theme(plot.title=element_text(face="bold",colour="#3C3C3C",size=30)) +
     ylab(ylab) +
     xlab(xlab) +
     theme(axis.text.x=element_blank()) +
@@ -40,7 +40,7 @@ knot.barchart <- function(df, x, y, fill, title, xlab, ylab, filename) {
     # color palette for fills
     scale_fill_brewer(palette="Paired")
 
-  ggsave(filename=paste("../images/", filename, ".png", sep=""),width=40, height=60, units="cm", dpi=600)
+  ggsave(filename=paste(filename, ".png", sep=""), height=60, width=40, units="cm", dpi=600)
 }
 
 
