@@ -8,7 +8,8 @@
 .Rdata
 
 # RStudio files
-.Rproj.user/
+.Rproj.user
 
 # PNG files for testing
 *.png
+test.R

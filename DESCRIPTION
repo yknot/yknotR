@@ -1,0 +1,8 @@
+Package: yknotR
+Title: Andrew Yale's (yknot) personal R functions
+Version: 0.1
+Authors@R: "Andrew Yale <a.yale9@gmail.com> [aut, cre]"
+Description: What the package does (one paragraph)
+Depends: R (>= 3.1.2)
+License: MIT
+LazyData: true
