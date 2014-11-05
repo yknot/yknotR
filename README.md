@@ -1,4 +1,5 @@
-knotPlot
+yknotR
 ========
 
-Pseudo-Library of functions to make ggplots in R
+
+Library of my R functions
