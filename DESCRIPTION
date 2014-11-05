@@ -3,6 +3,10 @@ Title: Andrew Yale's (yknot) personal R functions
 Version: 0.1
 Authors@R: "Andrew Yale <a.yale9@gmail.com> [aut, cre]"
 Description: What the package does (one paragraph)
-Depends: R (>= 3.1.2)
+Depends:
+    R (>= 3.1.2),
+    ggplot2 (>= 1.0.0),
+    grid (>= 3.1.2),
+    RColorBrewer (>= 1.0-5)
 License: MIT
 LazyData: true
