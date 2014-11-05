@@ -1,9 +1,16 @@
-library(ggplot2)
-library(grid)
-library(RColorBrewer)
+#' A Barchart function with ggplot2
+#'
+#' Creates barchart and saves it as png
+#' @param df dataframe
+#'        x x data
+#'        y ydata
+#' @keywords plot
+#' @export
+#' @examples
+#' yknot.barchart(iris, "Sepal.Length", "Sepal.Width", "Species", "Sepal Comparison", "Sepal Length", "Sepal Width", "Test")
 
-# function to create vertical barchart
-knot.barchart <- function(df, x, y, fill, title, xlab, ylab, filename) {
+
+yknot.barchart <- function(df, x, y, fill, title, xlab, ylab, filename) {
   ggplot(df, aes_string(x = x, y = y, fill = fill)) +
     # bar chart
     geom_bar(stat='identity') +
@@ -42,9 +49,3 @@ knot.barchart <- function(df, x, y, fill, title, xlab, ylab, filename) {
 
   ggsave(filename=paste(filename, ".png", sep=""), height=60, width=40, units="cm", dpi=600)
 }
-
-
-knot.scatter <- function(df, x, y) {
-
-}
-

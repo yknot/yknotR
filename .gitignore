@@ -9,7 +9,7 @@
 
 # RStudio files
 .Rproj.user
+*.Rproj
 
 # PNG files for testing
 *.png
-test.R
