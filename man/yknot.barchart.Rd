@@ -7,12 +7,24 @@
 yknot.barchart(df, x, y, fill, title, xlab, ylab, filename)
 }
 \arguments{
-\item{df}{dataframe
-x x data
-y ydata}
+\item{df}{dataframe which x and y are from}
+
+\item{x}{column of x}
+
+\item{y}{column of y}
+
+\item{fill}{column of fill (categorical data)}
+
+\item{title}{title of plot}
+
+\item{xlab}{label of x data}
+
+\item{ylab}{label of y data}
+
+\item{filename}{filename of the png}
 }
 \description{
-Creates barchart and saves it as png
+Creates barchart using ggplot2 and saves it as png in current directory
 }
 \examples{
 yknot.barchart(iris, "Sepal.Length", "Sepal.Width", "Species", "Sepal Comparison", "Sepal Length", "Sepal Width", "Test")

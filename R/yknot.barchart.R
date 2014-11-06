@@ -1,9 +1,14 @@
 #' A Barchart function with ggplot2
 #'
-#' Creates barchart and saves it as png
-#' @param df dataframe
-#'        x x data
-#'        y ydata
+#' Creates barchart using ggplot2 and saves it as png in current directory
+#' @param df dataframe which x and y are from
+#' @param x column of x
+#' @param y column of y
+#' @param fill column of fill (categorical data)
+#' @param title title of plot
+#' @param xlab label of x data
+#' @param ylab label of y data
+#' @param filename filename of the png
 #' @keywords plot
 #' @export
 #' @examples
